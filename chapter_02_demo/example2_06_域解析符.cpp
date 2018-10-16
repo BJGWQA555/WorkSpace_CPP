@@ -1,11 +1,7 @@
-﻿//
-/*----------------------------------------------------*
- example2_06.cpp：域解析符使全局变量真正具有全局作用域
-*-----------------------------------------------------*/
-
+﻿//example2_06.cpp：域解析符使全局变量真正具有全局作用域
 #include <iostream>
 #include <iomanip>
-
+#include<Windows.h>
 using namespace std;                         //使用C++的标准名字空间
 
 int sum = 5000; 		                    //定义全局变量sum 
@@ -27,12 +23,11 @@ int main()
 	sum *= 2;                                //这是全局sum,因为局部变量sum的作用域已结束 
 	cout << "sum=" << sum << endl;           //输出全局sum变量的值
 
-	int sum = 200;                        //定义另一个局部变量sum   	
+	int sum = 200;						     //定义另一个局部变量sum   	
 	cout << "sum=" << sum << endl;           //输出刚定义的局部变量sum的值 
-	::sum += sum;           	          //通过域解析符使全局sum在同名局部sum的作用域可见	
-
+	::sum += sum;           				 //通过域解析符使全局sum在同名局部sum的作用域可见	
 	cout << "全局sum=" << ::sum << endl;     //输出全局sum变量的值
-
+	system("pause");
 	return 0;
 }
 

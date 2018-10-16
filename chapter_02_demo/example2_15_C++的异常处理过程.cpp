@@ -1,7 +1,6 @@
-﻿/*---------------------------------------------------------*
-//example2_15.cpp：C++的异常处理过程和方法示例
-*---------------------------------------------------------*/
+﻿//example2_15.cpp：C++的异常处理过程和方法示例
 #include <iostream>
+#include<Windows.h>
 using namespace std;
 
 int divide(int x, int y)
@@ -28,5 +27,6 @@ int main()
 	}
 
 	cout << "calculate finished" << endl;  	//catch块的后续语句
+	system("pause");
 	return 0;
 }
