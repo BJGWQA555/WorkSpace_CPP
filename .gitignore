@@ -1,1 +1,39 @@
-*.exe # 忽略所有 .a 结尾的文件
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+*.vcxproj
+*.filters
+*.dsp
+*.dsw
+*.ncb
+*.opt
+*.plg
+
+# Executables
+*.exe
+*.out
+*.app
