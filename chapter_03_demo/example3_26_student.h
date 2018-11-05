@@ -9,7 +9,7 @@ class Student
         char *name;
         char ID[19];
         char number[10];
-        char speciality[21];    //专业
+        char speciality[20];    //专业
         int age;
     public:
         Student ();
@@ -22,7 +22,7 @@ class Student
         char *GetSpec();
         int GetAge();
         void Display();
-        void Input();         //输入学生成绩
+        void Input();         //输入学生信息
 };
 #endif
 

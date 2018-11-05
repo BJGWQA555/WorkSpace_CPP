@@ -1,6 +1,6 @@
 #include <iostream>
 #include <cstring>
-#include "example3_26_student.h" //""
+#include "example3_26_student.h"    //""
 #include "example3_26_student.cpp"	//vsc Ðè¼Ó
 using namespace std;
 
@@ -67,7 +67,7 @@ int SearchStu(Student *array, char *na)
 {
 	int i, j = N;
 	for (i = 0; i < count1; i++)
-		if (strcmp(array[i].GetName(), na) == 0);
+		if (strcmp(array[i].GetName(), na) == 0); 
 	j = i;
 	return j;
 }
