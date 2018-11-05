@@ -1,1 +1,1 @@
-touch .gitignore
+*.exe # 忽略所有 .a 结尾的文件
