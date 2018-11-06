@@ -21,7 +21,7 @@ Student::Student(char *na, char *id, char *num, char *spec, int ag)
 	age = ag;
 }
 
-Student::Student(const Student &per) //拷贝构造函数，在此例中暂时，没有用到
+Student::Student(const Student &per) 	//拷贝构造函数，在此例中暂时，没有用到
 {
 	if (per.name)
 	{
@@ -70,8 +70,7 @@ void Student::Display()
 	cout << "身份证：" << ID << endl;
 	cout << "学号" << number << endl;
 	cout << "专业" << speciality << endl;
-	cout << "年龄" << age << endl
-		 << endl;
+	cout << "年龄" << age << endl<< endl;
 }
 
 void Student::Input()
@@ -80,8 +79,8 @@ void Student::Input()
 	cout << "输入姓名";
 	cin >> na;
 	if (name)
-		delete[] name;
-	name = new char[strlen(na) + 2];
+		delete[] name;					//
+	name = new char[strlen(na) + 2];	//
 	strcpy(name, na);
 	cout << "输入身份证:";
 	cin >> ID;
