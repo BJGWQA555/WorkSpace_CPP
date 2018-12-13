@@ -37,3 +37,17 @@
 *.exe
 *.out
 *.app
+
+# add
+*.log
+*.idb
+*.pdb
+*.lastbuildstate
+*.vcxproj.user
+*.user
+*.vs
+*.suo
+*.db
+*.opendb
+*.ipch
+*.
