@@ -50,4 +50,6 @@
 *.db
 *.opendb
 *.ipch
-*.
+*.tlog
+*.ilk
+*.sln
